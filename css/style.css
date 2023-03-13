@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --dark-cyan: hsl(158, 36%, 37%);
+    --cream: hsl(30, 38%, 92%);
+    --very-dark-blue: hsl(212, 21%, 14%);
+    --dark-grayish-blue: hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+}
+
+body {
+    height: 100vh;
+    background: var(--cream);
+    font-size: 0.875rem;
+    /* padding: 1.75rem 1rem; */
+}
+
+
+p {
+    padding: 1rem 0 1.5rem;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    color: var(--dark-grayish-blue);
+    line-height: 1.5;
+}
+
+
+.card {
+    background-color: var(--white);
+    /* border: 1px blue dashed; */
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    margin: 1.75rem 1rem;
+    height: 90%;
+}
+
+.image-card {
+
+    
+}
+
+.main-img {
+    width: 343px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.detail-card {
+    display: flex;
+    flex-direction: column;
+    padding: 0 1.5rem;
+    background-color: var(--white);
+    
+}
+
+.title {
+    color: var(--dark-grayish-blue);
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 0.75rem;
+    letter-spacing: 5px;
+    padding: 1.5rem 0rem 1rem;
+}
+.perfume-detail {
+    padding: 1rem 0rem 1.5rem;
+}
+
+.pricing {
+    display: flex;
+    padding-bottom: 1.25rem;
+}
+
+.new-price {
+    color: var(--dark-cyan);
+    font-family: 'Fraunces', san-serif;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.old-price {
+    font-family: 'Montserrat', san-serif;
+    font-size: 0.875rem;
+    color: var(--dark-grayish-blue);
+    align-self: center;
+    padding-left: 1.25rem;
+    text-decoration: line-through;
+}
+
+.button {
+    position: relative;
+    background-color: var(--dark-cyan);
+    color: var(--white);
+    font-family: 'Montserrat', san-serif;
+    font-weight: 700;
+    font-size: 0.875rem;
+    border: none;
+    border-radius: 35px;
+    padding: 20px;
+    margin-bottom: 1.5rem;
+}
+
+.icon {
+
+}
+
+/* attribution */
+.attribution {
+    display: flex;
+    justify-content: center;
+    font-size: 11px;
+    text-align: center;
+    margin: auto;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+
+  @media only screen and  (min-width: 768px) {
+
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: row;
+        max-width: 600px;
+        max-height: 450px;
+        border: 20px;
+        width: 90%;
+        margin: auto;
+    }
+
+    .image-card { 
+        height: 450px;
+        width: 300px;
+        object-fit: contain;
+    }
+
+    .detail-card {
+        width: 300px;
+        height: auto;
+    }
+
+
+    .main-img {
+        max-width: 300px;
+        height: auto;
+        /* object-fit: none;
+        overflow: hidden; */
+    }
+
+  }
+    
+  
